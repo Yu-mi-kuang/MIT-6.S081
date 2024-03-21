@@ -17,6 +17,7 @@ char* fmtname(char *path) {
         return p;
     memmove(buf, p, strlen(p));
     buf[strlen(p)] = 0;
+    // memset(buf+strlen(p), 0, DIRSIZ-strlen(p));
     return buf;
 }
 
